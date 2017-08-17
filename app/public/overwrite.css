@@ -1,0 +1,24 @@
+.input-field {
+  margin: 0px 0px 0px 0px !important;
+}
+
+input.select-dropdown,
+input.select-wrapper {
+  margin-bottom: 0px !important;
+}
+
+.question-header {
+  margin: 0px;
+}
+
+p {
+  margin: 5px !important
+}
+
+ul.dropdown-content.select-dropdown li span {
+  color: #5e35b1 !important;
+}
+
+li.span {
+  color: #5e35b1 !important;;
+}
