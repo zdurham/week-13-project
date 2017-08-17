@@ -21,11 +21,11 @@ module.exports = function(app) {
       for (x=0; x < newFriend.scores.length; x++) {
         if (friends[i].scores[x] !== newFriend.scores[x]) {
           let diff = Math.abs(parseFloat(friends[i].scores[x]) - parseFloat(newFriend.scores[x]))
-          console.log(diff)          
+                  
           totalDiff += diff
         }
         else {
-          console.log(totalDiff)
+          
           totalDiff += 0;
         }
       }
@@ -43,7 +43,7 @@ module.exports = function(app) {
     // and change it if any other items in the
     // array are lower
     let lowestDiff = diffArr[0].totalDiff
-    console.log(lowestDiff)
+   
     let matchId = diffArr[0].id
     // Now I run a final loop to determine the 
     // lowest totalDiff (the best friend)
@@ -54,7 +54,7 @@ module.exports = function(app) {
       }
     }
     let bestMatch = friends[matchId]
-    console.log(bestMatch)
+    
     friends.push(newFriend)
 
     res.json(bestMatch)   
